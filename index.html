@@ -13,30 +13,34 @@
         input[type=number] {
             -moz-appearance: textfield;
         }
-        .diagram {
-            position: relative;
+        #diagram {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-top: 1em;
             width: 30px;
-            height: 100px;
+            height: 200px;
             border: 1px solid black;
+            transform: translateX(11.5em);
         }
-        .green {
-            position: absolute;
-            bottom: 0;
+        #green {
             height: 40px;
             width: 30px;
             background-color: green;
         }
-        .red {
-            
+        #red {
+            height: 20px;
+            width: 30px;
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <input id="range" type="range" min="10" max="100"></input>
-    <input id="number" type="number" min="10" max="100"></input>
-    <div class="diagram">
-        <div class="green"></div>
-        <div class="red"></div>
+    <input id="range" type="range" min="0" max="100"></input>
+    <input id="number" type="number"></input>
+    <div id="diagram">
+        <div id="red"></div>
+        <div id="green"></div>
     </div>
 </body>
 <script src="main.js"></script>
