@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 15</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        .diagram {
+            position: relative;
+            width: 30px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .green {
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            width: 30px;
+            background-color: green;
+        }
+        .red {
+            
+        }
+    </style>
+</head>
+<body>
+    <input id="range" type="range" min="10" max="100"></input>
+    <input id="number" type="number" min="10" max="100"></input>
+    <div class="diagram">
+        <div class="green"></div>
+        <div class="red"></div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
