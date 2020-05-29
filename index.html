@@ -5,31 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 15</title>
     <style>
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-        }
-
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
         #diagram {
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: flex-end;
             margin-top: 1em;
             width: 30px;
-            height: 200px;
+            height: 108px;
             border: 1px solid black;
             transform: translateX(11.5em);
         }
         #green {
-            height: 40px;
+            /* height: 40px; */
             width: 30px;
             background-color: green;
         }
         #red {
-            height: 20px;
+            /* height: 20px; */
             width: 30px;
             background-color: red;
         }
@@ -37,7 +29,7 @@
 </head>
 <body>
     <input id="range" type="range" min="0" max="100"></input>
-    <input id="number" type="number"></input>
+    <input id="number" type="number" min="0" max="100"></input>
     <div id="diagram">
         <div id="red"></div>
         <div id="green"></div>
